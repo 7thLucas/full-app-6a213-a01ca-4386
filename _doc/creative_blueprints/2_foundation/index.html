@@ -1,40 +1,67 @@
 <style>
-  .mode-landscape .sl-foundation-layout { display: flex; flex-direction: row; align-items: stretch; min-height: 100%; }
-  .mode-landscape .sl-content-panel { width: 55%; padding: 3rem; display: flex; flex-direction: column; justify-content: center; }
-  .mode-landscape .sl-visual-panel { width: 45%; min-height: 0; }
-  .mode-portrait .sl-foundation-layout { display: flex; flex-direction: column; min-height: 100%; }
-  .mode-portrait .sl-content-panel { padding: 2rem 1.5rem; }
-  .mode-portrait .sl-visual-panel { min-height: 280px; }
+  .sl-layout { display: flex; flex-direction: row; height: 100%; }
+  .sl-problem { width: 50%; display: flex; flex-direction: column; justify-content: space-between; padding: 3rem; background-color: #1c1917; box-sizing: border-box; }
+  .sl-solution { width: 50%; display: flex; flex-direction: column; justify-content: space-between; padding: 3rem; background-color: #fffbeb; box-sizing: border-box; }
+  .mode-portrait .sl-layout { flex-direction: column; }
+  .mode-portrait .sl-problem { width: 100%; flex: 1; padding: 2rem; }
+  .mode-portrait .sl-solution { width: 100%; flex: 1; padding: 2rem; }
 </style>
-<section class="w-full h-full overflow-auto bg-white">
-  <div class="sl-foundation-layout">
-    <div class="sl-content-panel">
-      <div class="flex items-center justify-between mb-4">
-        <span class="inline-block text-xs font-semibold tracking-widest uppercase" style="color:#FFC107;">Foundation</span>
-        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 border rounded-full" style="background-color:#FFC107; border-color:#FFC10730;">
-          <span class="text-xs font-semibold" style="color:#ffffff;">Validated</span>
+<section class="w-full h-full overflow-hidden bg-white">
+  <div class="sl-layout">
 
-        </span>
+    <!-- Problem panel (dark) -->
+    <div class="sl-problem">
+      <div>
+        <p style="font-size:10px;font-weight:800;letter-spacing:0.15em;text-transform:uppercase;color:#fbbf24;margin-bottom:1.25rem;">The Problem</p>
+        <h2 style="font-size:clamp(1.6rem,3vw,2.2rem);font-weight:900;color:#ffffff;line-height:1.15;margin:0 0 1.25rem 0;">Word games plateau too fast.</h2>
+        <p style="font-size:0.82rem;color:#a8a29e;line-height:1.75;margin:0 0 1.75rem 0;">Most word games offer a single mechanic with no story, no progression, and no compelling reason to return the next day. Players solve a puzzle, feel a moment of satisfaction — and forget the app exists.</p>
       </div>
-      <h1 class="text-3xl font-bold text-slate-900 leading-tight mb-8">Word puzzle games feel repetitive, isolated, or too academic—players lack engagement hooks, progression milestones, and reasons to return daily.</h1>
-      <div class="space-y-5">
-        <div class="border-l-4 pl-4 relative" style="border-color:#F43F5E;">
-          <h2 class="text-sm font-semibold uppercase tracking-wide mb-1" style="color:#E11D48;">The Problem</h2>
-          <p class="text-slate-700 leading-relaxed text-sm">Word puzzle games feel isolated and repetitive. Players need engaging progression, daily reward loops, and meaningful milestones that make them want to return.</p>
-        </div>
-        <div class="border-l-4 pl-4 relative" style="border-color:#FFC107;">
-          <h2 class="text-sm font-semibold uppercase tracking-wide mb-1" style="color:#FFC107;">The Solution</h2>
-          <p class="text-slate-700 leading-relaxed text-sm">Casual gamers and families want engaging word games that reward discovery, offer meaningful progression, and provide daily reasons to play. Traditional word puzzles lack story, community, and tangible reward loops that keep players invested long-term.</p>
-        </div>
-        <div class="border-l-4 border-sky-500 pl-4 relative"><h2 class="text-sm font-semibold text-sky-600 uppercase tracking-wide mb-1">Target Audience</h2><p class="text-slate-700 leading-relaxed text-sm">Families and casual gamers aged 8+, word-game enthusiasts, competitive players seeking leaderboards</p></div>
-        <div class="border-l-4 border-amber-500 pl-4 relative"><h2 class="text-sm font-semibold text-amber-600 uppercase tracking-wide mb-1">Personal Motivation</h2><p class="text-slate-700 leading-relaxed text-sm">Create a premium-feel word game that is more engaging than Wordle, more accessible than Scrabble, and more educational than typical mobile puzzles.</p></div>
+      <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.75rem;">
+        <li style="display:flex;align-items:flex-start;gap:0.75rem;">
+          <span style="color:#f87171;font-size:1rem;line-height:1.3;flex-shrink:0;">✕</span>
+          <span style="font-size:0.8rem;color:#d6d3d1;">No story worlds or progression to chase</span>
+        </li>
+        <li style="display:flex;align-items:flex-start;gap:0.75rem;">
+          <span style="color:#f87171;font-size:1rem;line-height:1.3;flex-shrink:0;">✕</span>
+          <span style="font-size:0.8rem;color:#d6d3d1;">No rewards, economy, or collectibles</span>
+        </li>
+        <li style="display:flex;align-items:flex-start;gap:0.75rem;">
+          <span style="color:#f87171;font-size:1rem;line-height:1.3;flex-shrink:0;">✕</span>
+          <span style="font-size:0.8rem;color:#d6d3d1;">No daily hook to build a return habit</span>
+        </li>
+        <li style="display:flex;align-items:flex-start;gap:0.75rem;">
+          <span style="color:#f87171;font-size:1rem;line-height:1.3;flex-shrink:0;">✕</span>
+          <span style="font-size:0.8rem;color:#d6d3d1;">Too simple for adults, too dry for kids</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Solution panel (light) -->
+    <div class="sl-solution">
+      <div>
+        <p style="font-size:10px;font-weight:800;letter-spacing:0.15em;text-transform:uppercase;color:#d97706;margin-bottom:1.25rem;">The Solution</p>
+        <h2 style="font-size:clamp(1.6rem,3vw,2.2rem);font-weight:900;color:#451a03;line-height:1.15;margin:0 0 1.25rem 0;">A word game with a whole world inside it.</h2>
+        <p style="font-size:0.82rem;color:#92400e;line-height:1.75;margin:0 0 1.75rem 0;">Spelling Bee Adventure wraps rich Scrabble-style gameplay in a full quest system, reward economy, and story progression — delivering the vocabulary joy of a word game with the engagement depth of a great mobile adventure.</p>
       </div>
-      <div class="mt-6 flex flex-wrap gap-2"><span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">word puzzle</span><span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">progression system</span><span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">casual gaming</span><span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">daily rewards</span><span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">family-friendly</span><span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">free-to-play</span></div>
-      <div class="mt-8"><data-attribution /></div>
+      <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.75rem;">
+        <li style="display:flex;align-items:flex-start;gap:0.75rem;">
+          <span style="color:#16a34a;font-size:1rem;line-height:1.3;flex-shrink:0;">✓</span>
+          <span style="font-size:0.8rem;color:#78350f;">Themed worlds — Honeycomb Hills, Blossom Forest, Crystal Hive</span>
+        </li>
+        <li style="display:flex;align-items:flex-start;gap:0.75rem;">
+          <span style="color:#16a34a;font-size:1rem;line-height:1.3;flex-shrink:0;">✓</span>
+          <span style="font-size:0.8rem;color:#78350f;">Honey Coins, treasure chests, streaks &amp; a cosmetic shop</span>
+        </li>
+        <li style="display:flex;align-items:flex-start;gap:0.75rem;">
+          <span style="color:#16a34a;font-size:1rem;line-height:1.3;flex-shrink:0;">✓</span>
+          <span style="font-size:0.8rem;color:#78350f;">Daily quests + login rewards drive a habit-forming loop</span>
+        </li>
+        <li style="display:flex;align-items:flex-start;gap:0.75rem;">
+          <span style="color:#16a34a;font-size:1rem;line-height:1.3;flex-shrink:0;">✓</span>
+          <span style="font-size:0.8rem;color:#78350f;">Tunable difficulty — welcoming at 8, deeply engaging at 40+</span>
+        </li>
+      </ul>
     </div>
-    <div class="sl-visual-panel relative">
-      <img src="http://localhost:8001/common/image-generation?prompt=frustrated player at desk boring word game screen grey tiles" alt="visual" class="w-full h-full object-cover" />
-      <div class="absolute inset-0 bg-gradient-to-r from-white via-transparent to-transparent opacity-40"></div>
-    </div>
+
   </div>
 </section>
