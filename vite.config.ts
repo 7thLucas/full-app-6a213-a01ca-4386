@@ -6,6 +6,7 @@ import { fileURLToPath, URL } from "node:url";
 
 export default defineConfig({
   resolve: {
+    dedupe: ["react", "react-dom", "react-router"],
     alias: [
       {
         find: /^@qb\/(.+)$/,
