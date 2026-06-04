@@ -1,0 +1,64 @@
+<style>
+  .sl-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; flex: 1; min-height: 0; }
+  .mode-portrait .sl-grid { grid-template-columns: repeat(2, 1fr); }
+</style>
+<section class="w-full h-full overflow-hidden bg-white">
+  <div style="display:flex;flex-direction:column;height:100%;padding:2.5rem;gap:1.5rem;box-sizing:border-box;">
+
+    <!-- Header row -->
+    <div style="display:flex;align-items:flex-start;justify-content:space-between;flex-shrink:0;gap:1rem;">
+      <div>
+        <p style="font-size:10px;font-weight:800;letter-spacing:0.15em;text-transform:uppercase;color:#d97706;margin:0 0 0.25rem 0;">What's Inside</p>
+        <h2 style="font-size:1.9rem;font-weight:900;color:#451a03;margin:0;">Core Features</h2>
+      </div>
+      <!-- Persona chips -->
+      <div style="display:flex;gap:0.5rem;flex-wrap:wrap;justify-content:flex-end;">
+        <span style="background:#fbbf24;color:#451a03;font-size:11px;font-weight:700;padding:4px 12px;border-radius:999px;">🏠 Families</span>
+        <span style="background:#fef3c7;color:#92400e;font-size:11px;font-weight:600;padding:4px 12px;border-radius:999px;">📚 Word Lovers</span>
+        <span style="background:#fef3c7;color:#92400e;font-size:11px;font-weight:600;padding:4px 12px;border-radius:999px;">🎮 Casual Gamers</span>
+        <span style="background:#fef3c7;color:#92400e;font-size:11px;font-weight:600;padding:4px 12px;border-radius:999px;">🧒 Kids 8+</span>
+      </div>
+    </div>
+
+    <!-- Feature grid -->
+    <div class="sl-grid">
+      <!-- Scrabble Board -->
+      <div style="background:#fffbeb;border:1px solid #fde68a;border-radius:1rem;padding:1.25rem;display:flex;flex-direction:column;gap:0.5rem;">
+        <span style="font-size:1.6rem;">🎯</span>
+        <h3 style="font-size:0.82rem;font-weight:800;color:#451a03;margin:0;">Scrabble-Style Board</h3>
+        <p style="font-size:0.72rem;color:#92400e;line-height:1.6;margin:0;">Place letter tiles on a bonus-square board. Score by letter value, word length, and multiplier tiles.</p>
+      </div>
+      <!-- Quests -->
+      <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:1rem;padding:1.25rem;display:flex;flex-direction:column;gap:0.5rem;">
+        <span style="font-size:1.6rem;">📜</span>
+        <h3 style="font-size:0.82rem;font-weight:800;color:#14532d;margin:0;">Quest System</h3>
+        <p style="font-size:0.72rem;color:#166534;line-height:1.6;margin:0;">Daily, weekly &amp; seasonal quests. Story mode across themed worlds with stages and boss challenges.</p>
+      </div>
+      <!-- Economy -->
+      <div style="background:#fefce8;border:1px solid #fef08a;border-radius:1rem;padding:1.25rem;display:flex;flex-direction:column;gap:0.5rem;">
+        <span style="font-size:1.6rem;">🍯</span>
+        <h3 style="font-size:0.82rem;font-weight:800;color:#713f12;margin:0;">Honey Coins Economy</h3>
+        <p style="font-size:0.72rem;color:#854d0e;line-height:1.6;margin:0;">Earn coins from quests, streaks &amp; treasure chests. Spend on power-ups and cosmetics in the shop.</p>
+      </div>
+      <!-- Power-Ups -->
+      <div style="background:#faf5ff;border:1px solid #e9d5ff;border-radius:1rem;padding:1.25rem;display:flex;flex-direction:column;gap:0.5rem;">
+        <span style="font-size:1.6rem;">⚡</span>
+        <h3 style="font-size:0.82rem;font-weight:800;color:#3b0764;margin:0;">Power-Ups</h3>
+        <p style="font-size:0.72rem;color:#6b21a8;line-height:1.6;margin:0;">Reveal Letter, Shuffle Tiles, Highlight Words, Double Score &amp; Time Extension boosters.</p>
+      </div>
+      <!-- Game Modes -->
+      <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:1rem;padding:1.25rem;display:flex;flex-direction:column;gap:0.5rem;">
+        <span style="font-size:1.6rem;">🕹️</span>
+        <h3 style="font-size:0.82rem;font-weight:800;color:#1e3a8a;margin:0;">6 Game Modes</h3>
+        <p style="font-size:0.72rem;color:#1d4ed8;line-height:1.6;margin:0;">Adventure, Daily Challenge, Timed, Endless, Practice, and Multiplayer leaderboard competition.</p>
+      </div>
+      <!-- Progression -->
+      <div style="background:#fff1f2;border:1px solid #fecdd3;border-radius:1rem;padding:1.25rem;display:flex;flex-direction:column;gap:0.5rem;">
+        <span style="font-size:1.6rem;">🏆</span>
+        <h3 style="font-size:0.82rem;font-weight:800;color:#881337;margin:0;">XP &amp; Progression</h3>
+        <p style="font-size:0.72rem;color:#be123c;line-height:1.6;margin:0;">Level up to unlock worlds, board skins, tile designs, badges &amp; personal stat tracking.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
