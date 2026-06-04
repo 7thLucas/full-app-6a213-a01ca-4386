@@ -4,7 +4,7 @@
 Spelling Bee Adventure is a colorful, family-friendly, browser-based word puzzle game that blends Scrabble-style tile placement with a deep quest, reward, and progression system. Players form valid words on a game board using letter tiles, earn points, complete quests, and advance through a honey-and-hive themed universe packed with characters, worlds, and collectibles.
 
 ## Target Audience
-- **Primary:** Families and casual gamers aged 8 and up
+- **Primary:** Kids and adults — families playing together and individuals of all ages
 - **Secondary:** Word-game enthusiasts, educators, and competitive players seeking leaderboard rankings
 - **Tertiary:** Adults who enjoy browser/mobile puzzle games with idle-game-style reward loops
 
