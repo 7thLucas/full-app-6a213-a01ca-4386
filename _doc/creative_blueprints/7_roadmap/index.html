@@ -1,0 +1,77 @@
+<style>
+  .sl-pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; flex: 1; min-height: 0; }
+  .mode-portrait .sl-pillars { grid-template-columns: 1fr; gap: 0.9rem; }
+</style>
+<section class="w-full h-full overflow-hidden bg-white">
+  <div style="display:flex;flex-direction:column;height:100%;padding:2.5rem;gap:1.25rem;box-sizing:border-box;">
+
+    <!-- Header -->
+    <div style="flex-shrink:0;display:flex;align-items:flex-end;justify-content:space-between;">
+      <div>
+        <p style="font-size:10px;font-weight:800;letter-spacing:0.15em;text-transform:uppercase;color:#d97706;margin:0 0 0.25rem 0;">Post-MVP Roadmap</p>
+        <h2 style="font-size:1.9rem;font-weight:900;color:#451a03;margin:0;line-height:1.1;">What Comes Next</h2>
+      </div>
+      <span style="font-size:11px;font-weight:700;color:#92400e;background:#fef3c7;border:1px solid #fde68a;padding:4px 14px;border-radius:999px;flex-shrink:0;">3 Capability Pillars</span>
+    </div>
+
+    <!-- Three pillar cards -->
+    <div class="sl-pillars">
+
+      <!-- Pillar 1: Multiplayer Live Battles -->
+      <div style="background:#451a03;border-radius:1.25rem;padding:1.5rem;display:flex;flex-direction:column;gap:0.9rem;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:-18px;right:-18px;width:90px;height:90px;background:#d97706;border-radius:50%;opacity:0.15;"></div>
+        <div>
+          <span style="display:inline-block;background:#d97706;color:#fff8f0;font-size:9.5px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;padding:3px 10px;border-radius:999px;">Pillar 1 — Engagement</span>
+        </div>
+        <h3 style="font-size:1.05rem;font-weight:900;color:#fef3c7;margin:0;line-height:1.3;">Multiplayer<br/>Live Battles</h3>
+        <p style="font-size:0.7rem;color:#fde68a;line-height:1.65;margin:0;flex:1;">Real-time head-to-head word battles against friends or matched opponents on a shared board. Quick-match queue, challenge-a-friend invites, and a dedicated Battle Wins leaderboard.</p>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.45rem;">
+          <li style="display:flex;align-items:center;gap:0.5rem;"><span style="width:6px;height:6px;border-radius:50%;background:#fbbf24;flex-shrink:0;"></span><span style="font-size:0.65rem;color:#fde68a;">3-minute live rounds, same board seed</span></li>
+          <li style="display:flex;align-items:center;gap:0.5rem;"><span style="width:6px;height:6px;border-radius:50%;background:#fbbf24;flex-shrink:0;"></span><span style="font-size:0.65rem;color:#fde68a;">Buzz Bot fallback if no match in 30s</span></li>
+          <li style="display:flex;align-items:center;gap:0.5rem;"><span style="width:6px;height:6px;border-radius:50%;background:#fbbf24;flex-shrink:0;"></span><span style="font-size:0.65rem;color:#fde68a;">Preset bee emotes — family-safe</span></li>
+          <li style="display:flex;align-items:center;gap:0.5rem;"><span style="width:6px;height:6px;border-radius:50%;background:#fbbf24;flex-shrink:0;"></span><span style="font-size:0.65rem;color:#fde68a;">Honey Coins + XP awarded post-battle</span></li>
+        </ul>
+      </div>
+
+      <!-- Pillar 2: Seasonal Events -->
+      <div style="background:#f0fdf4;border:1.5px solid #86efac;border-radius:1.25rem;padding:1.5rem;display:flex;flex-direction:column;gap:0.9rem;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:-18px;right:-18px;width:90px;height:90px;background:#22c55e;border-radius:50%;opacity:0.12;"></div>
+        <div>
+          <span style="display:inline-block;background:#16a34a;color:#f0fdf4;font-size:9.5px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;padding:3px 10px;border-radius:999px;">Pillar 2 — Retention</span>
+        </div>
+        <h3 style="font-size:1.05rem;font-weight:900;color:#14532d;margin:0;line-height:1.3;">Seasonal Events<br/>&amp; Special Worlds</h3>
+        <p style="font-size:0.7rem;color:#166534;line-height:1.65;margin:0;flex:1;">Limited-time holiday themes that transform the world map and board. Dedicated event quest lines, exclusive earn-only cosmetics, and a reusable event framework so new events are configuration, not code.</p>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.45rem;">
+          <li style="display:flex;align-items:center;gap:0.5rem;"><span style="width:6px;height:6px;border-radius:50%;background:#16a34a;flex-shrink:0;"></span><span style="font-size:0.65rem;color:#166534;">Dynamic CSS skin system per event</span></li>
+          <li style="display:flex;align-items:center;gap:0.5rem;"><span style="width:6px;height:6px;border-radius:50%;background:#16a34a;flex-shrink:0;"></span><span style="font-size:0.65rem;color:#166534;">5–7 quest line with Grand Prize chest</span></li>
+          <li style="display:flex;align-items:center;gap:0.5rem;"><span style="width:6px;height:6px;border-radius:50%;background:#16a34a;flex-shrink:0;"></span><span style="font-size:0.65rem;color:#166534;">Event-only Buzz outfits, tiles, boards</span></li>
+          <li style="display:flex;align-items:center;gap:0.5rem;"><span style="width:6px;height:6px;border-radius:50%;background:#16a34a;flex-shrink:0;"></span><span style="font-size:0.65rem;color:#166534;">Two launch templates: Summer Hive Fest &amp; Winter Frost Hive</span></li>
+        </ul>
+      </div>
+
+      <!-- Pillar 3: Social & Friends -->
+      <div style="background:#eff6ff;border:1.5px solid #bfdbfe;border-radius:1.25rem;padding:1.5rem;display:flex;flex-direction:column;gap:0.9rem;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:-18px;right:-18px;width:90px;height:90px;background:#3b82f6;border-radius:50%;opacity:0.12;"></div>
+        <div>
+          <span style="display:inline-block;background:#2563eb;color:#eff6ff;font-size:9.5px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;padding:3px 10px;border-radius:999px;">Pillar 3 — Virality</span>
+        </div>
+        <h3 style="font-size:1.05rem;font-weight:900;color:#1e3a8a;margin:0;line-height:1.3;">Social &amp; Friends<br/>System</h3>
+        <p style="font-size:0.7rem;color:#1d4ed8;line-height:1.65;margin:0;flex:1;">Friend lists, a friends-only leaderboard, daily Honey Coin gifts, and challenge invites with shareable deep links. Turns individual retention into network retention — every active friend is a re-engagement trigger.</p>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.45rem;">
+          <li style="display:flex;align-items:center;gap:0.5rem;"><span style="width:6px;height:6px;border-radius:50%;background:#2563eb;flex-shrink:0;"></span><span style="font-size:0.65rem;color:#1d4ed8;">Add friends by username or invite link</span></li>
+          <li style="display:flex;align-items:center;gap:0.5rem;"><span style="width:6px;height:6px;border-radius:50%;background:#2563eb;flex-shrink:0;"></span><span style="font-size:0.65rem;color:#1d4ed8;">1 gift (25 coins) per friend per day</span></li>
+          <li style="display:flex;align-items:center;gap:0.5rem;"><span style="width:6px;height:6px;border-radius:50%;background:#2563eb;flex-shrink:0;"></span><span style="font-size:0.65rem;color:#1d4ed8;">Challenge a friend to beat your score</span></li>
+          <li style="display:flex;align-items:center;gap:0.5rem;"><span style="width:6px;height:6px;border-radius:50%;background:#2563eb;flex-shrink:0;"></span><span style="font-size:0.65rem;color:#1d4ed8;">Unified notification inbox for all social activity</span></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom strip -->
+    <div style="flex-shrink:0;background:#fef3c7;border-radius:0.85rem;padding:0.85rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;">
+      <p style="font-size:0.7rem;color:#92400e;line-height:1.5;margin:0;max-width:36rem;"><strong style="color:#451a03;">Design principle:</strong> Every post-MVP pillar is additive — it deepens the core loop without changing it. Multiplayer adds urgency. Seasonal events add novelty. Social adds network gravity. Together they compound Day-30 retention without paywalling the experience.</p>
+      <span style="font-size:10px;font-weight:800;color:#d97706;white-space:nowrap;flex-shrink:0;">All rewards earn-only. No paywalls.</span>
+    </div>
+
+  </div>
+</section>
