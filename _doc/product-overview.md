@@ -1,7 +1,7 @@
-# Product Overview — Spelling Bee Adventure
+# Product Overview — Spelling Bee Quest
 
 ## What It Is
-Spelling Bee Adventure is a colorful, family-friendly, browser-based word puzzle game that blends Scrabble-style tile placement with a deep quest, reward, and progression system. Players form valid words on a game board using letter tiles, earn points, complete quests, and advance through a honey-and-hive themed universe packed with characters, worlds, and collectibles.
+Spelling Bee Quest is a colorful, family-friendly, browser-based word puzzle game that blends Scrabble-style tile placement with a deep quest, reward, and progression system. Players form valid words on a game board using letter tiles, earn points, complete quests, and advance through a honey-and-hive themed universe packed with characters, worlds, and collectibles.
 
 ## Target Audience
 - **Primary:** Kids and adults — families playing together and individuals of all ages
