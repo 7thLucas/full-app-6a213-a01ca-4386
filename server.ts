@@ -15,7 +15,7 @@ const BUILD_PATH = "./build/server/index.js";
 const DEVELOPMENT = process.env.NODE_ENV !== "production";
 
 async function startServer() {
-  // Connect to MongoDB
+  // Connect to MongoDB (non-fatal — frontend still serves without a DB connection)
   try {
     await connectMongoDB();
     console.log("MongoDB connected");
@@ -25,7 +25,7 @@ async function startServer() {
 
   } catch (error) {
     console.error("Failed to connect to MongoDB:", error);
-    process.exit(1);
+    console.warn("⚠️  Continuing without MongoDB — database-dependent API routes will be unavailable.");
   }
 
   const app = express();
