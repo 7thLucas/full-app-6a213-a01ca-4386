@@ -1,79 +1,86 @@
-Build a fun and engaging Spelling Bee adventure game that combines word puzzles, quests, rewards, and progression mechanics. The game should be inspired by Scrabble-style gameplay, where players form valid words on a game board using letter tiles, but with a colorful, family-friendly, and highly gamified experience.
+# Product Overview — Spelling Bee Adventure
 
-Core Gameplay:
-- Players are given a set of letter tiles and must create valid words on a Scrabble-like board.
-- Words earn points based on letter values, word length, and bonus tiles.
-- Players complete spelling challenges and quests by finding specific words, themes, or target scores.
-- Difficulty gradually increases as players progress through levels.
+## What It Is
+Spelling Bee Adventure is a colorful, family-friendly, browser-based word puzzle game that blends Scrabble-style tile placement with a deep quest, reward, and progression system. Players form valid words on a game board using letter tiles, earn points, complete quests, and advance through a honey-and-hive themed universe packed with characters, worlds, and collectibles.
 
-Quest System:
-- Daily quests (e.g., create 10 words, score 500 points, use rare letters)
-- Story mode with multiple worlds and stages
-- Weekly challenges with special rewards
-- Achievement system with badges and milestones
-- Special event quests and seasonal content
+## Target Audience
+- **Primary:** Families and casual gamers aged 8 and up
+- **Secondary:** Word-game enthusiasts, educators, and competitive players seeking leaderboard rankings
+- **Tertiary:** Adults who enjoy browser/mobile puzzle games with idle-game-style reward loops
 
-Economy & Rewards:
-- Coins earned from completing levels, quests, and achievements
-- Bonus rewards for streaks and perfect levels
-- Coin shop for purchasing power-ups, hints, and cosmetic items
-- Daily login rewards
-- Treasure chests containing coins, boosters, and collectibles
+## Positioning
+A premium-feel, free-to-play word adventure that is more engaging than a plain crossword or Wordle clone, more accessible than Scrabble, and more educational than a typical mobile puzzle game. The game sits at the intersection of *NYT Spelling Bee*, *Scrabble GO*, and *Candy Crush*-style progression.
 
-Power-Ups:
-- Reveal a letter
-- Shuffle letter tiles
-- Highlight possible words
-- Double score booster
-- Time extension booster for timed modes
+## Brand & Tone
+- **Theme:** Bees, honey, hives, flowers, and gardens — warm yellows, ambers, greens, and soft blues
+- **Tone:** Playful, encouraging, celebratory — never punishing
+- **Mascot:** Buzz, the friendly bee character, guides players through quests and reacts to word plays
+- **Voice:** Fun, slightly educational, family-safe
 
-Game Modes:
-- Adventure Mode (story progression)
-- Daily Challenge
-- Timed Mode
-- Endless Mode
-- Practice Mode
-- Multiplayer leaderboard competition
+## Core Gameplay
+- Players receive a set of letter tiles and place them on a Scrabble-style board to form valid English words
+- Words score points based on letter rarity values, word length multipliers, and special bonus tiles on the board
+- A built-in dictionary validates every submitted word
+- Difficulty ramps gradually: simpler boards and common letters in early levels; larger boards, rare letters, and timed pressure in later levels
 
-Progression System:
-- Player levels and experience points (XP)
-- Unlock new worlds and themes
-- Unlock new tile designs and board skins
-- Collect badges and achievements
-- Track statistics and personal best scores
+## Game Modes
+| Mode | Description |
+|------|-------------|
+| Adventure Mode | Story-driven progression through themed worlds and stages |
+| Daily Challenge | A new curated puzzle every 24 hours |
+| Timed Mode | Race against the clock for bonus multipliers |
+| Endless Mode | Freeplay with no stage limit; compete for high scores |
+| Practice Mode | Relaxed mode — no scoring pressure, no timer |
+| Multiplayer | Real-time or async leaderboard competition |
 
-UI/UX:
-- Bright, colorful, and playful theme
-- Bee-themed characters and animations
-- Honey, hive, and garden-inspired visual elements
-- Smooth animations and satisfying feedback
-- Responsive design for desktop, tablet, and mobile
-- Fun sound effects and background music
+## Quest System
+- **Daily Quests:** e.g., create 10 words, score 500 points, use a rare letter — resets every 24 h
+- **Story Mode:** Multiple themed worlds (Honeycomb Hills, Blossom Forest, Crystal Hive…), each with stages and a boss challenge
+- **Weekly Challenges:** Harder targets with special cosmetic rewards
+- **Achievements:** Permanent badges and milestone unlocks (First Word, 1,000 Points, Speed Speller, Rare Letter Master…)
+- **Seasonal Events:** Holiday-themed content, limited-time quests, exclusive collectibles
 
-Screens:
-- Welcome Screen
-- Player Profile
-- World Map
-- Quest Center
-- Game Board
-- Shop
-- Inventory
-- Leaderboards
-- Achievements
-- Settings
+## Economy & Rewards
+- **Currency:** Honey Coins (soft currency, earned in-game only)
+- **Sources:** Level completion, quest rewards, streak bonuses, perfect-level bonuses, daily login rewards, treasure chests
+- **Shop:** Power-ups, hints, tile designs, board skins, Buzz cosmetic outfits
+- **Treasure Chests:** Random drops of coins, boosters, and collectibles on level completion
+- **Streak System:** Consecutive daily play rewarded with escalating bonuses
 
-Leaderboard:
-- Daily rankings
-- Weekly rankings
-- All-time rankings
-- Friends leaderboard
+## Power-Ups
+| Power-Up | Effect |
+|----------|--------|
+| Reveal Letter | Uncovers one hidden or blank tile |
+| Shuffle Tiles | Randomises the current letter rack |
+| Highlight Words | Briefly shows valid word placements |
+| Double Score | 2× points for the next word played |
+| Time Extension | +30 seconds in Timed Mode |
 
-Technical Requirements:
-- Dictionary validation for submitted words
-- Save player progress automatically
-- Cloud-based account system
-- Responsive performance
-- Offline support for single-player mode
-- Analytics and player statistics
+## Progression System
+- XP earned every session; player level unlocks new worlds, themes, and cosmetics
+- Badge collection tracks lifetime achievements
+- Personal stats dashboard: words found, total score, best streak, rare letters used, accuracy, etc.
+- Unlockable tile designs and board skins for personalisation
 
-Generate a complete frontend, backend, database schema, game logic, progression system, reward economy, animations, sound integration, and production-ready UI. The game should feel polished, addictive, educational, and suitable for both children and adults.
+## Screens
+Welcome → Player Profile → World Map → Quest Center → Game Board → Shop → Inventory → Leaderboards → Achievements → Settings
+
+## Leaderboards
+- Daily, Weekly, All-time, and Friends rankings
+- Global and regional filters
+
+## Technical Architecture
+- **Frontend:** Fully responsive SPA (desktop, tablet, mobile-first)
+- **Backend:** REST + WebSocket API with cloud user account system
+- **Database:** Player profiles, progress state, quest states, scores, inventory
+- **Dictionary:** Server-side word validation against a standard English dictionary
+- **Offline support:** Single-player modes playable without a connection; data syncs on reconnect
+- **Auto-save:** Progress written to server after every action; local cache as fallback
+- **Analytics:** Session tracking, funnel analysis, quest completion rates, retention metrics
+
+## Strategic Principles
+1. **Hook fast** — first meaningful reward within 90 seconds of a new player's first session
+2. **Daily return loop** — daily quests + login rewards drive high Day-7 and Day-30 retention
+3. **Educational without lecturing** — word discovery feels exciting, not like homework
+4. **Cosmetic monetisation** — all purchasable items are cosmetic; core gameplay is never paywalled
+5. **Scalable content calendar** — seasonal events and new worlds extend content indefinitely
